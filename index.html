@@ -21,27 +21,24 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" href="/css/styles.css">
 
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
     <title>Skybin</title>
 </head>
 <body>
 
-<nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
-    <img id="skybin-logo" src="/favicon-32x32.png" alt="">
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
+<nav id="top-nav" class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="nav-link" href="/index.html">
+        <img id="skybin-logo" src="/favicon-32x32.png" alt="">
+    </a>
 
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
             <li class="nav-item">
-                <a class="nav-link" href="#abstract-row">Home <span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="/about.html">About</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#download-row">Download</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#about-row">About</a>
+                <a class="nav-link" href="/api.html">API</a>
             </li>
         </ul>
     </div>
@@ -52,24 +49,26 @@
     <!-- Abstract section -->
     <div class="container">
         <div id="abstract-row" class="row">
-            <div id="abstract-container" class="col-6 section-col">
-                <h3>Introduction</h3>
-                <p>
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever
-                    since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five
-                    centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of
-                    Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of
-                    Lorem Ipsum.
-                </p>
-            </div>
-        </div>
-    </div>
+            <div id="abstract-container" class="col-8 section-col">
+                <img id="skybin-logo-text" src="./skybin-logo.png" alt="">
+                <hr>
+                <p id="intro-text">
+                    SkyBin is a
+                    <a class="def-text"
+                       href="https://en.wikipedia.org/wiki/Peer-to-peer"
+                       target="_blank">
+                        peer-to-peer
+                    </a>
+                    file storage system which aims to provide an alternative to centralized
+                    cloud storage options like DropBox or Google Drive.
 
-    <!-- Download / guide section -->
-    <div class="container">
-        <div id="download-row" class="row">
-            <div id="download-container" class="col-6 section-col">
-                <h3>Download</h3>
+                    Using a desktop graphical application, SkyBin lets users upload their files to other users’
+                    machines and then browse and download their uploaded content
+                    from any of their devices. Additionally, users will be able to share files while keeping them secure
+                    and private.
+
+                </p>
+                <h4>Download</h4>
                 <div id="download-buttons-container">
                     <a href="/downloads/mac.zip">
                         <button type="button" class="btn btn-outline-primary">
@@ -86,52 +85,27 @@
                     </button>
                 </div>
                 <div id="guide-link-container">
-                    <a href="/tutorial">New to Skybin? Check out our user guide.</a>
+                    <a href="#movie-container">New to Skybin? Check out our video introduction.</a>
                 </div>
             </div>
         </div>
+
     </div>
 
-    <!-- About section -->
     <div class="container">
-        <div id="about-row" class="row">
-            <div id="about-container" class="col-6 section-col">
-                <h3>About</h3>
-                <p>
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever
-                    since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five
-                    centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of
-                    Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of
-                    Lorem Ipsum.
-                </p>
+        <div id="movie-container" class="col-11 section-col">
+            <h3 style="margin-bottom: 1em;">Introducing the Skybin Portal</h3>
+            <video id="tutorial-video" width=500 height=500 controls src="/sky_walk.webm">
+                Sorry, your browser doesn't support embedded videos,
+                but don't worry, you can <a href="sky_walk.webm">download it</a>
+                and watch it with your favorite video player!
+            </video>
+            <div id="top-nav-link-container">
+                <a href="#">Scroll to top</a>
             </div>
         </div>
     </div>
 
-    <!-- Tutorial section -->
-    <div class="container">
-        <div id="tutorial-row" class="row">
-            <div id="tutorial-container" class="col-6 section-col">
-                <h3>Tutorial</h3>
-                <p>
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever
-                    since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five
-                    centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of
-                    Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of
-                    Lorem Ipsum.
-                </p>
-                <p>
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever
-                    since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five
-                    centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of
-                    Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of
-                    Lorem Ipsum.
-                </p>
-            </div>
-
-        </div>
-
-    </div>
 </div>
 
 <!-- Optional JavaScript -->
@@ -145,5 +119,22 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
+<script
+        src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+
+<script>
+	$('#guide-link-container').click(function () {
+		$('html, body').animate({
+			scrollTop: $('#movie-container').offset().top
+		}, 500);
+	});
+	$('#top-nav-link-container').click(function () {
+		$('html, body').animate({
+			scrollTop: $('#top-nav').offset().top
+		}, 500);
+	});
+</script>
 </body>
 </html>

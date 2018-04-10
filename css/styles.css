@@ -15,7 +15,7 @@ a:hover {
 }
 
 #skybin-logo-text {
-    width: 50%;
+    width: 40%;
     margin-bottom: 1em;
 }
 
@@ -41,7 +41,7 @@ a:hover {
     margin-right: auto;
 }
 
-.container {
+.home-container {
     margin-bottom: 4em;
     text-align: center !important;
     height: 100vh !important;
@@ -76,4 +76,21 @@ a:hover {
 
 #top-nav-link-container {
     margin-top: 2em;
+}
+
+#about-abstract {
+    margin-top: 5em;
+}
+
+.about-container {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 3em;
+    text-align: center;
+}
+
+
+
+#fork-me-pic {
+    width: 10%;
 }

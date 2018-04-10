@@ -1,0 +1,29 @@
+#team-pic {
+    height: 30vh;
+    margin-left: auto;
+    margin-right: auto;
+    background: #3ffff8;
+}
+.biopic {
+    /*height: 35vh;*/
+    margin-top: 3em;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid black;
+}
+
+.biopic-title {
+    margin-top: .5em;
+    margin-bottom: 0;
+
+}
+
+.biopic-subtitle {
+    margin-left: 5%;
+    color: gray;
+
+}
+
+.biopic-content {
+    margin-top: 0;
+}

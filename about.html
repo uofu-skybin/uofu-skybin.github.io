@@ -26,7 +26,7 @@
 </head>
 <body>
 
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
+<nav id="top-nav" class="navbar navbar-expand-lg navbar-light bg-light">
     <a class="nav-link" href="/index.html">
         <img id="skybin-logo" src="/favicon-32x32.png" alt="">
     </a>
@@ -41,13 +41,26 @@
                 <a class="nav-link" href="/about.html">About</a>
             </li>
             <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                   aria-haspopup="true" aria-expanded="false">
                     API
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="#">Renter</a>
-                    <a class="dropdown-item" href="#">Provider</a>
-                    <a class="dropdown-item" href="/dist/index.html?url=https://raw.githubusercontent.com/uofu-skybin/skybin/master/docs/metaserver.yaml">Metaserver</a>
+                    <a class="dropdown-item"
+                       href="/dist/index.html?url=https://raw.githubusercontent.com/uofu-skybin/skybin/master/docs/metaserver.yaml"
+                       target="_blank">
+                        Renter
+                    </a>
+                    <a class="dropdown-item"
+                       href="/dist/index.html?url=https://raw.githubusercontent.com/uofu-skybin/skybin/master/docs/metaserver.yaml"
+                       target="_blank">
+                        Provider
+                    </a>
+                    <a class="dropdown-item"
+                       href="/dist/index.html?url=https://raw.githubusercontent.com/uofu-skybin/skybin/master/docs/metaserver.yaml"
+                       target="_blank">
+                        Metaserver
+                    </a>
                 </div>
             </li>
         </ul>
@@ -57,53 +70,86 @@
 <div class="container-fluid">
 
     <div class="row">
-        <div id="about-abstract" class="about-container col-10">
-            <h2>Meet the team</h2>
+        <div id="about-container" class="col-10">
+            <h2 id="meet-the-team">Meet the team</h2>
 
             <div class="row">
-                <div id="team-pic" class="col-11">
-                    THIS IS THE TEAM PIC
+                <div id="team-pic-container" class="col-11">
+                    <img id="team-pic-image" src="/team_picture.jpg" alt="">
+                    <div id="guide-link-container">
+                        <a id="about-us" href="#">About us
+                        <br>
+                        <i class="far fa-arrow-alt-circle-down nav-arrow"></i>
+                        </a>
+                    </div>
                 </div>
             </div>
 
             <div class="row">
-                <div class="biopic col-5">
-                    <h5 class="biopic-title">Gradey Cullins</h5>
-                    <p class="biopic-subtitle"><em>front-end developer</em></p>
-                    <p class="biopic-content">
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-                        industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
-                        and scrambled it to make a type specimen book.
-                    </p>
-                </div>
-                <div class="biopic col-5">
-                    <h5 class="biopic-title">Zak Peters</h5>
-                    <p class="biopic-subtitle"><em>full-stack developer</em></p>
-                    <p class="biopic-content">
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-                        industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
-                        and scrambled it to make a type specimen book.
-                    </p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="biopic col-5">
-                    <h5 class="biopic-title">Kincaid Savoie</h5>
-                    <p class="biopic-subtitle"><em>full-stack developer</em></p>
-                    <p class="biopic-content">
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-                        industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
-                        and scrambled it to make a type specimen book.
-                    </p>
-                </div>
-                <div class="biopic col-5">
-                    <h5 class="biopic-title">Alex Steele</h5>
-                    <p class="biopic-subtitle"><em>full-stack developer</em></p>
-                    <p class="biopic-content">
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-                        industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
-                        and scrambled it to make a type specimen book.
-                    </p>
+                <div id="bio-container">
+                    <div class="row">
+                        <div class="biopic col-5">
+                            <h5 class="biopic-title">Kincaid Savoie</h5>
+                            <p class="biopic-subtitle"><em>full-stack developer</em></p>
+                            <p class="biopic-content">
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                                has been
+                                the
+                                industry's standard dummy text ever since the 1500s, when an unknown printer took a
+                                galley of
+                                type
+                                and scrambled it to make a type specimen book.
+                            </p>
+                        </div>
+                        <div class="biopic col-5">
+                            <h5 class="biopic-title">Alex Steele</h5>
+                            <p class="biopic-subtitle"><em>full-stack developer</em></p>
+                            <p class="biopic-content">
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                                has been
+                                the
+                                industry's standard dummy text ever since the 1500s, when an unknown printer took a
+                                galley of
+                                type
+                                and scrambled it to make a type specimen book.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="biopic col-5">
+                            <h5 class="biopic-title">Gradey Cullins</h5>
+                            <p class="biopic-subtitle"><em>front-end developer</em></p>
+                            <p class="biopic-content">
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                                has been
+                                the
+                                industry's standard dummy text ever since the 1500s, when an unknown printer took a
+                                galley of
+                                type
+                                and scrambled it to make a type specimen book.
+                            </p>
+                        </div>
+                        <div class="biopic col-5">
+                            <h5 class="biopic-title">Zak Peters</h5>
+                            <p class="biopic-subtitle"><em>full-stack developer</em></p>
+                            <p class="biopic-content">
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                                has been
+                                the
+                                industry's standard dummy text ever since the 1500s, when an unknown printer took a
+                                galley of
+                                type
+                                and scrambled it to make a type specimen book.
+                            </p>
+                        </div>
+                    </div>
+                    <div id="top-nav-link-container">
+                        <a href="#">Scroll to top
+                            <br>
+                            <i class="far fa-arrow-alt-circle-up nav-arrow"></i>
+                        </a>
+                    </div>
+
                 </div>
             </div>
 
@@ -124,6 +170,25 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
+<script
+        src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+<script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js"
+        integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+"
+        crossorigin="anonymous"></script>
+<script>
+	$('#about-us').click(function () {
+		$('html, body').animate({
+			scrollTop: $('#bio-container').offset().top
+		}, 500);
+	});
+	$('#top-nav-link-container').click(function () {
+		$('html, body').animate({
+			scrollTop: $('#top-nav').offset().top
+		}, 500);
+	});
+</script>
 </body>
 </html>
 

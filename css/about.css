@@ -1,15 +1,28 @@
-#team-pic {
-    height: 30vh;
+#about-container {
     margin-left: auto;
     margin-right: auto;
-    background: #3ffff8;
+    margin-bottom: 3em;
+    text-align: center;
+    padding-top: 1em;
+}
+#team-pic-container {
+    /*height: 30vh;*/
+    margin-left: auto;
+    margin-right: auto;
+    height: 100vh;
+}
+
+#team-pic-image {
+    width: 85%;
 }
 .biopic {
     /*height: 35vh;*/
     margin-top: 3em;
     margin-left: auto;
     margin-right: auto;
-    border: 1px solid black;
+    background: #dfecff;
+    border: 1px solid #a5a5f3;
+    box-shadow: 5px 5px 5px #616071;
 }
 
 .biopic-title {
@@ -19,7 +32,7 @@
 }
 
 .biopic-subtitle {
-    margin-left: 5%;
+    /*margin-left: 5%;*/
     color: gray;
 
 }
@@ -27,3 +40,9 @@
 .biopic-content {
     margin-top: 0;
 }
+
+#bio-container {
+    padding-top: 5%;
+    height: 100vh;
+}
+

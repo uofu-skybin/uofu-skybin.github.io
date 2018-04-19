@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="en">
+
 <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
@@ -15,8 +16,8 @@
     <meta name="theme-color" content="#ffffff">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="/css/styles.css">
@@ -25,88 +26,103 @@
 
     <title>Skybin</title>
 </head>
+
 <body>
 
-<nav id="top-nav" class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="/index.html"><img id="skybin-logo" src="/favicon-32x32.png" alt=""></a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+    <nav id="top-nav" class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="/index.html">
+            <img id="skybin-logo" src="/favicon-32x32.png" alt="">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
-            <li class="nav-item">
-                <a class="nav-link" href="/about.html">About</a>
-            </li>
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-                   aria-haspopup="true" aria-expanded="false">
-                    API
-                </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item"
-                       href="/dist/index.html?url=https://raw.githubusercontent.com/uofu-skybin/skybin/master/docs/metaserver.yaml"
-                       target="_blank">
-                        Renter
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="/about.html">About</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                        API
                     </a>
-                    <a class="dropdown-item"
-                       href="/dist/index.html?url=https://raw.githubusercontent.com/uofu-skybin/skybin/master/docs/metaserver.yaml"
-                       target="_blank">
-                        Provider
-                    </a>
-                    <a class="dropdown-item"
-                       href="/dist/index.html?url=https://raw.githubusercontent.com/uofu-skybin/skybin/master/docs/metaserver.yaml"
-                       target="_blank">
-                        Metaserver
-                    </a>
-                </div>
-            </li>
-        </ul>
-    </div>
-</nav>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="/dist/index.html?url=https://raw.githubusercontent.com/uofu-skybin/skybin/master/docs/metaserver.yaml"
+                            target="_blank">
+                            Renter
+                        </a>
+                        <a class="dropdown-item" href="/dist/index.html?url=https://raw.githubusercontent.com/uofu-skybin/skybin/master/docs/metaserver.yaml"
+                            target="_blank">
+                            Provider
+                        </a>
+                        <a class="dropdown-item" href="/dist/index.html?url=https://raw.githubusercontent.com/uofu-skybin/skybin/master/docs/metaserver.yaml"
+                            target="_blank">
+                            Metaserver
+                        </a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
 
-<div class="container-fluid">
-    <!--<a href="https://github.com/uofu-skybin" target="_blank"><img id="fork-me-pic" style="position: absolute; top: 0; right: 0; border: 0;"-->
-    <!--src="/fork_me.png"-->
-    <!--alt="Fork me on GitHub"></a>-->
+    <div class="container-fluid">
+        <!--<a href="https://github.com/uofu-skybin" target="_blank"><img id="fork-me-pic" style="position: absolute; top: 0; right: 0; border: 0;"-->
+        <!--src="/fork_me.png"-->
+        <!--alt="Fork me on GitHub"></a>-->
 
-    <!-- Abstract section -->
-    <div class="home-container">
-        <div id="abstract-row" class="row">
-            <div id="abstract-container" class="col-6 section-col">
-                <img id="skybin-logo-text" src="./skybin-logo.png" alt="">
-                <!--<hr>-->
-                <p id="intro-text">
-                    SkyBin is a
-                    <a class="def-text"
-                       href="https://en.wikipedia.org/wiki/Peer-to-peer"
-                       target="_blank">
-                        peer-to-peer
-                    </a>
-                    file storage system which aims to provide an alternative to centralized
-                    cloud storage options like DropBox or Google Drive.
-                </p>
-                <h4>Download</h4>
-                <div id="download-buttons-container">
-                    <a href="/downloads/mac.zip">
+        <!-- Abstract section -->
+        <div class="home-container">
+            <div id="abstract-row" class="row">
+                <div id="abstract-container" class="col-6 section-col">
+                    <img id="skybin-logo-text" src="./skybin-logo.png" alt="">
+                    <!--<hr>-->
+                    <p id="intro-text">
+                        SkyBin is a peer-to-peer file storage system where users can rent storage on each other's machines. It
+                        aims to provide an alternative to centralized cloud storage options like DropBox
+                        or Google Drive.
+                    </p>
+                    <h4>Download</h4>
+                    <div id="download-buttons-container">
+                        <a href="/downloads/mac.zip">
+                            <button type="button" class="btn btn-outline-primary">
+                                MacOS
+                            </button>
+                        </a>
+                        <a href="/downloads/lin.zip">
+                            <button type="button" class="btn btn-outline-primary">
+                                Linux
+                            </button>
+                        </a>
                         <button type="button" class="btn btn-outline-primary">
-                            MacOS
+                            <a href="/downloads/win.zip">Windows</a>
                         </button>
-                    </a>
-                    <a href="/downloads/lin.zip">
-                        <button type="button" class="btn btn-outline-primary">
-                            Linux
-                        </button>
-                    </a>
-                    <button type="button" class="btn btn-outline-primary">
-                        <a href="/downloads/win.zip">Windows</a>
-                    </button>
+                    </div>
+                    <div id="guide-link-container">
+                        <a href="#movie-container">New to Skybin? Check out our video introduction.
+                            <br>
+                            <i class="far fa-arrow-alt-circle-down nav-arrow"></i>
+                        </a>
+                    </div>
                 </div>
-                <div id="guide-link-container">
-                    <a href="#movie-container">New to Skybin? Check out our video introduction.
+            </div>
+
+        </div>
+
+        <div class="home-container">
+            <div id="movie-container" class="col-8 section-col">
+                <h3 style="margin-bottom: 1em;">Introducing the Skybin Portal</h3>
+                <video id="tutorial-video" width=500 height=500 controls src="/sky_walk.webm">
+                    Sorry, your browser doesn't support embedded videos, but don't worry, you can
+                    <a
+                        href="sky_walk.webm">download it</a>
+                        and watch it with your favorite video player!
+                </video>
+                <div id="top-nav-link-container">
+                    <a href="#">Scroll to top
                         <br>
-                        <i class="far fa-arrow-alt-circle-down nav-arrow"></i>
+                        <i class="far fa-arrow-alt-circle-up nav-arrow"></i>
                     </a>
                 </div>
             </div>
@@ -114,54 +130,30 @@
 
     </div>
 
-    <div class="home-container">
-        <div id="movie-container" class="col-8 section-col">
-            <h3 style="margin-bottom: 1em;">Introducing the Skybin Portal</h3>
-            <video id="tutorial-video" width=500 height=500 controls src="/sky_walk.webm">
-                Sorry, your browser doesn't support embedded videos,
-                but don't worry, you can <a href="sky_walk.webm">download it</a>
-                and watch it with your favorite video player!
-            </video>
-            <div id="top-nav-link-container">
-                <a href="#">Scroll to top
-                    <br>
-                    <i class="far fa-arrow-alt-circle-up nav-arrow"></i>
-                </a>
-            </div>
-        </div>
-    </div>
-
-</div>
-
-<!-- Optional JavaScript -->
-<!-- jQuery first, then Popper.js, then Bootstrap JS -->
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
         crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
         crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
-<script
-        src="https://code.jquery.com/jquery-3.3.1.min.js"
-        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
         crossorigin="anonymous"></script>
-<script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js"
-        integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+"
+    <script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js" integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+"
         crossorigin="anonymous"></script>
-<script>
-	$('#guide-link-container').click(function () {
-		$('html, body').animate({
-			scrollTop: $('#movie-container').offset().top
-		}, 500);
-	});
-	$('#top-nav-link-container').click(function () {
-		$('html, body').animate({
-			scrollTop: $('#top-nav').offset().top
-		}, 500);
-	});
-</script>
+    <script>
+        $('#guide-link-container').click(function () {
+            $('html, body').animate({
+                scrollTop: $('#movie-container').offset().top
+            }, 500);
+        });
+        $('#top-nav-link-container').click(function () {
+            $('html, body').animate({
+                scrollTop: $('#top-nav').offset().top
+            }, 500);
+        });
+    </script>
 </body>
+
 </html>

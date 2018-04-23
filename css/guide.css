@@ -1,0 +1,29 @@
+#guide-nav-col {
+    padding: 2em 0 0 3em;
+}
+
+#guide-title {
+    margin: 1em auto 2em auto;
+}
+
+.guide-section-title {
+    margin-bottom: 1em;
+}
+
+.guide-section-container {
+    width: 100%;
+    margin-bottom: 5rem;
+    padding-top: 0.75em;
+}
+
+#guide-nav-container {
+    position: fixed;
+    background: #f8f9fa!important;
+    padding: 1em;
+}
+
+.guide-image {
+    width: 40em;
+    margin-bottom: 1.5em;
+    border: 1px solid #d2cbcb;
+}

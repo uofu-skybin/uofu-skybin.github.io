@@ -1,0 +1,424 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Favicon stuff -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+          crossorigin="anonymous">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/guide.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+    <title>SkyBin | Guide</title>
+</head>
+
+<body>
+
+<nav id="top-nav" class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="/index.html">
+        <img id="skybin-logo" src="/favicon-32x32.png" alt="">
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="/about.html">About</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/guide.html">Guide</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                   aria-haspopup="true" aria-expanded="false">
+                    API
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item"
+                       href="/dist/index.html?url=https://raw.githubusercontent.com/uofu-skybin/skybin/master/docs/renter.yaml"
+                       target="_blank">
+                        Renter
+                    </a>
+                    <a class="dropdown-item"
+                       href="/dist/index.html?url=https://raw.githubusercontent.com/uofu-skybin/skybin/master/docs/provider.yaml"
+                       target="_blank">
+                        Provider
+                    </a>
+                    <a class="dropdown-item"
+                       href="/dist/index.html?url=https://raw.githubusercontent.com/uofu-skybin/skybin/master/docs/metaserver.yaml"
+                       target="_blank">
+                        Metaserver
+                    </a>
+                </div>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<div class="container-fluid">
+    <div id="guide-container">
+        <div class="row">
+            <div id="guide-nav-col" class="col-sm-3">
+                <div id="guide-nav-container">
+                    <div class="guide-link-container">
+                        <a id="intro-link" href="#intro-container">Introduction</a>
+                    </div>
+                    <div class="guide-link-container">
+                        <a id="getting-started-link" href="#getting-started-container">Getting Started</a>
+                    </div>
+                    <div class="guide-link-container">
+                        <a id="running-a-provider-link" href="#running-a-provider-container">Running a Provider</a>
+                    </div>
+                    <div class="guide-link-container">
+                        <a id="behind-the-scenes-link" href="#behind-the-scenes-container">Behind the Scenes</a>
+                    </div>
+                    <div class="guide-link-container">
+                        <a id="faq-link" href="#faq-container">Frequently Asked Questions</a>
+                    </div>
+                </div>
+            </div>
+            <div id="guide-content-col" class="col-sm-9">
+
+                <!-- Introduction -->
+                <div class="row">
+                    <div id="intro-container" class="guide-section-container">
+                        <h3 id="guide-title">User Guide</h3>
+                        <h4 class="guide-section-title">Introduction</h4>
+                        <div class="guide-section-content">
+                            <p class="guide-content-paragraph">
+                                SkyBin is a peer-to-peer file storage application. Just like other online <br>
+                                storage apps, it lets you store your files online, share them with people you <br>
+                                know, and access them from multiple computers. The difference is that SkyBin is <br>
+                                powered by a peer-to-peer storage network instead of a central service. So when <br>
+                                you store a file in SkyBin, it gets placed on other users' machines, not on servers <br>
+                                operated by SkyBin.
+                            </p>
+                            <p class="guide-content-paragraph">
+                                This means that storage on SkyBin can be cheap, but it's also designed to be <br>
+                                secure and reliable. SkyBin encrypts your files end-to-end and guards against <br>
+                                data loss and corruption through periodic storage audits and redundant storage <br>
+                                based around a technique called erasure coding. These features allow the system <br>
+                                to recover your content even if other users go offline or try to tamper with <br>
+                                your files.
+                            </p>
+                            <p class="guide-content-paragraph">
+                                With SkyBin, you can also rent out your unused disk space to other users on the <br>
+                                network in return for cash. You get paid through Paypal, so it's easy to setup <br>
+                                and get started.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Getting Started -->
+                <div class="row">
+                    <div id="getting-started-container" class="guide-section-container">
+                        <h4 class="guide-section-title">Getting Started</h4>
+                        <div class="guide-section-content">
+                            <p class="guide-content-paragraph">
+                                Before you can store some files, you'll need to set up your account, transfer<br>
+                                some money into SkyBin to pay for storage, and reserve some space with other <br>
+                                users.
+                            </p>
+                            <p class="guide-content-paragraph">
+                                After downloading the app from our website, start by launching it and <br>
+                                registering a user alias. This can be any unique identifier that you don't mind<br>
+                                sharing with other people. It's how people you know can share content with you <br>
+                                later on.
+                            </p>
+                            <img class="guide-image" src="images/guide_imgs/register.png">
+                            <img class="guide-image" src="images/guide_imgs/register2.png">
+                            <p class="guide-content-paragraph">
+                                Next, you'll need to deposit some storage funds into SkyBin to pay for space.   <br>
+                                Navigate to the "My Wallet" tab and enter an amount to deposit into the "Renter"<br>
+                                wallet. A few bucks should be enough to get started. Don't worry about the      <br>
+                                Provider wallet for now; we'll get to that later.                               <br>
+                            </p>
+                            <img class="guide-image" src="images/guide_imgs/post_register.png">
+                            <img class="guide-image" src="images/guide_imgs/renter_deposit.png">
+                            <img class="guide-image" src="images/guide_imgs/renter_deposit_paypal_menu.png">
+                            <p class="guide-content-paragraph">
+                                Now you have some funds to pay for storage, so let's reserve some space to store files<br>
+                                with other users on the network. Navigate back to the My Files tab and click the      <br>
+                                "Reserve More Space" icon in the upper right.                                         <br>
+                            </p>
+                            <img class="guide-image" src="images/guide_imgs/reserve_space_click.png">
+                            <p class="guide-content-paragraph">
+                                Choose how much space to reserve. A few gigabytes will be more than enough to store  <br>
+                                a few files. Then click "Find Space" to search for users who can provide the storage.<br>
+                            </p>
+                            <img class="guide-image" src="images/guide_imgs/enter_space.png">
+                            <p class="guide-content-paragraph">
+                                The price of the storage will depend on the storage rates charged by the storage providers.<br>
+                                Click "Confirm" to pay for the space.
+                            </p>
+                            <img class="guide-image" src="images/guide_imgs/confirm_space.png">
+                            <p class="guide-content-paragraph">
+                                Now you're ready to upload a file. Click "Upload" and choose a file to store in SkyBin.
+                            </p>
+                            <img class="guide-image" src="images/guide_imgs/upload_click.png">
+                            <img class="guide-image" src="images/guide_imgs/upload_choose_file.png">
+                            <img class="guide-image" src="images/guide_imgs/upload_progress.png">
+                            <p class="guide-content-paragraph">
+                                Once the file's been stored, you can right click on it to see what actions you can perform<br>
+                                on it.
+                            </p>
+                            <img class="guide-image" src="images/guide_imgs/post_upload.png">
+                            <p class="guide-content-paragraph">
+                                You can also create folders to organize your content with the "Create Folder" icon.
+                            </p>
+                            <img class="guide-image" src="images/guide_imgs/create_folder_click.png">
+                            <img class="guide-image" src="images/guide_imgs/create_folder.png">
+                            <p class="guide-content-paragraph">
+                                Finally, retrieve the file by clicking the "Download" option.
+                            </p>
+                            <img class="guide-image" src="images/guide_imgs/download_click.png">
+                            <img class="guide-image" src="images/guide_imgs/download_enter_name.png">
+                            <img class="guide-image" src="images/guide_imgs/download_complete.png">
+                            <img class="guide-image" src="images/guide_imgs/download_view_file.png">
+                            <p class="guide-content-paragraph">
+                                Great! You've stored your first file in Skybin.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Running a Provider -->
+                <div class="row">
+                    <div id="running-a-provider-container" class="guide-section-container">
+                        <h4 class="guide-section-title">Running a Provider</h4>
+                        <div class="guide-section-content">
+                            <p class="guide-content-paragraph">
+                                With SkyBin, you can rent out your unused disk space to other users by running a provider   <br>
+                                node. This is a server on your computer that negotiates storage rates with users looking    <br>
+                                for space, stores users' files, and . Before you set up a provider node, you'll need to make<br>
+                                sure that your network is configured to allow incoming traffic. This will require that you  <br>
+                                have a publicly accessible IP address and that your firewall settings don't permit incoming <br>
+                                connections.
+                            </p>
+                            <p class="guide-content-paragraph">
+                                Once you've checked these network settings, you can get started by navigating to<br>
+                                the "Provide Storage" tab to register a provider node.
+                            </p>
+                            <img class="guide-image" src="images/guide_imgs/provider_registration_click.png">
+                            <p class="guide-content-paragraph">
+                                Here, you'll need to set your node's address, how much space you want to provide      <br>
+                                to the network, and your pricing policy. The pricing policy determines how much       <br>
+                                you charge for storage, and the algorithm used by your node to set your storage rate. <br>
+                                With an "aggressive" policy, your node will try to undercut other users' prices on the<br>
+                                network; with a "passive" policy, your node will generally follow the network average <br>
+                                rate; and with a "fixed" policy, you set the prices yourself.
+                            </p>
+                            <img class="guide-image" src="images/guide_imgs/provider_registration.png">
+                            <p class="guide-content-paragraph">
+                                After this setup is complete, your provider node will run whenever you run the SkyBin   <br>
+                                application. You can monitor its status, including things like network traffic, how much<br>
+                                space is being used by other users, and your current storage rate by navigating back to <br>
+                                the "Provide Storage" tab at any time.
+                            </p>
+                            <img class="guide-image" src="images/guide_imgs/post_provider_registration.png">
+                            <p class="guide-content-paragraph">
+                                You can also update your provider node's settings by clicking on the "Settings" button <br>
+                                in the Summary panel. This will allow you to adjust things like your pricing policy and<br>
+                                how much space you want to provide to other users.
+                            </p>
+                            <img class="guide-image" src="images/guide_imgs/provider_settings_click.png">
+                            <img class="guide-image" src="images/guide_imgs/provider_settings.png">
+                            <p class="guide-content-paragraph">
+                                As you begin to make money from your provider node, you can return to the "My Wallet"<br>
+                                tab to view the balance of your provider wallet. From here, you can also withdraw    <br>
+                                funds to an external account via Paypal.
+                            </p>
+                            <img class="guide-image" src="images/guide_imgs/provider_withdraw.png">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Behind the Scenes-->
+                <div class="row">
+                    <div id="behind-the-scenes-container" class="guide-section-container">
+                        <h4 class="guide-section-title">Behind the Scenes</h4>
+                        <div class="guide-section-content">
+                            <p class="guide-content-paragraph">
+                                SkyBin is built around three components.
+                            </p>
+                            <img class="guide-image" src="images/guide_imgs/skybin_architecture.png">
+                            <p class="guide-content-paragraph">
+                                Renter nodes store files with other users in SkyBin. They perform operations    <br>
+                                like encrypting and uploading files, determing where to store chunks of data,   <br>
+                                and downloading and reconstructing files from data chunks. This is the component<br>
+                                which the typical user interacts with to perform basic operations in SkyBin, and<br>
+                                it runs on the user's computer as part of the SkyBin application.
+                            </p>
+                            <p class="guide-content-paragraph">
+                                Provider nodes provide storage to the network, negotiating storage agreements <br>
+                                with renters, storing file blocks, and serving other users' content. Any user <br>
+                                with spare disk space can run a provider node to rent out their space for cash.
+                            </p>
+                            <p class="guide-content-paragraph">
+                                The SkyBin Metaserver stores file and user metadata, manages payments, and   <br>
+                                serves as a meeting place for renters and providers. This is a global service<br>
+                                operated by SkyBin.
+                            </p>
+                            <p class="guide-content-paragraph">
+                                Storage in SkyBin revolves around agreements called storage contracts. When a <br>
+                                renter would like to reserve storage space with a provider, they do so with a <br>
+                                storage contract, setting terms like how much space the provider is willing to<br>
+                                provide, the duration of the agreement, and the total fee the renter must pay <br>
+                                for the space. These agreements are negotiated behind the scenes by the SkyBin<br>
+                                system; users don't have to think about them.
+                            </p>
+                            <p class="guide-content-paragraph">
+                                Files are stored in SkyBin as encrypted chunks after being preprocessed by the renter  <br>
+                                who uploads them. This process includes compressing the file, encrypting it with a     <br>
+                                symmetric key (AES), breaking it into fixed-size data blocks, and then computing parity<br>
+                                blocks from the data blocks using an erasure coding scheme. Both data and parity blocks<br>
+                                are then stored on the network with providers the renter already has storage contracts <br>
+                                with. Metadata about the file, including the location of the blocks, is stored with    <br>
+                                the SkyBin Metaserver.
+                            </p>
+                            <p class="guide-content-paragraph">
+                                The erasure-coding scheme used to create parity blocks for the file is based on<br>
+                                Reed-Solomon codes. This is an error correction technique that allows SkyBin to<br>
+                                recover file content despite partial data loss. If some data block is          <br>
+                                irrecoverable or corrupted, a combination of data and parity blocks can be used<br>
+                                to reconstruct it. The approach is better than the more obvious recovery       <br>
+                                technique of storing multiple copies of files because any single parity block  <br>
+                                can be used to recover any single data block. For more information about this  <br>
+                                interesting technique, the BackBlaze blog has a useful primer:                 <br>
+                                https://www.backblaze.com/blog/reed-solomon/.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Frequently Asked Questions -->
+                <div class="row">
+                    <div id="faq-container" class="guide-section-container">
+                        <h4 class="guide-section-title">Frequently Asked Questions</h4>
+                        <div class="guide-section-content">
+                            <p class="guide-content-paragraph">
+                                <em>
+                                    What happens if the users storing my files go offline?
+                                </em>
+                            </p>
+                            <p class="guide-content-paragraph">
+                                SkyBin stores your files using a redundant storage scheme called erasure coding.<br>
+                                This allows SkyBin to retrieve your files even if some users storign them are   <br>
+                                offline. If too many of the users storing your file are offline, it may become  <br>
+                                inaccessible temporarily. SkyBin cannot guarantee that your files won't be      <br>
+                                permanently lost or inaccessible, so you should keep this in mind when choosing <br>
+                                what to store with SkyBin.
+                            </p>
+                            <p class="guide-content-paragraph">
+                                <em>
+                                    How does SkyBin keep my data private?
+                                </em>
+                            </p>
+                            <p class="guide-content-paragraph">
+                                SkyBin encrypts all of your data before it leaves your computer and only decrypts<br>
+                                it when you download it again. This ensures no one can see the content of your   <br>
+                                files except you and the people you've shared them with.
+                            </p>
+                            <p class="guide-content-paragraph">
+                                <em>
+                                    How does SkyBin protect against users deleting or changing my files?
+                                </em>
+                            </p>
+                            <p class="guide-content-paragraph">
+                                SkyBin's redundant storage scheme allows files to be retrieved even if parts    <br>
+                                have been lost. SkyBin also checks the integrity of your files periodically in  <br>
+                                the background and whenever you download them.  If a user has tampered with or  <br>
+                                lost part of your file, the system will detect it, reconstruct the file from the<br>
+                                redundant storage blocks, and store new copies of the lost or altered blocks    <br>
+                                with other providers on the network. This makes permanent data loss             <br>
+                                unlikely. However, it is still possible if too many users lose or tamper with   <br>
+                                your data, so you should be cautious storing critical documents in SkyBin.
+                            </p>
+                            <p class="guide-content-paragraph">
+                                <em>
+                                    If I run a provider node, can traffic from other users overwhelm my computer?
+                                </em>
+                            </p>
+                            <p class="guide-content-paragraph">
+                                If your provider node is popular, it is possible that traffic from other users<br>
+                                swamps your computer. You can always shut off your provider node temporarily  <br>
+                                to avoid this by shutting down the SkyBin application.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+<script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js"
+        integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+"
+        crossorigin="anonymous"></script>
+<script>
+	$('#intro-link').click(function () {
+		$('html, body').animate({
+			scrollTop: $('#intro-container').offset().top
+		}, 500);
+	});
+	$('#getting-started-link').click(function () {
+		$('html, body').animate({
+			scrollTop: $('#getting-started-container').offset().top
+		}, 500);
+	});
+	$('#running-a-provider-link').click(function () {
+		$('html, body').animate({
+			scrollTop: $('#running-a-provider-container').offset().top
+		}, 500);
+	});
+	$('#behind-the-scenes-link').click(function () {
+		$('html, body').animate({
+			scrollTop: $('#behind-the-scenes-container').offset().top
+		}, 500);
+	});
+	$('#faq-link').click(function () {
+		$('html, body').animate({
+			scrollTop: $('#faq-container').offset().top
+		}, 500);
+	});
+</script>
+</body>
+
+</html>

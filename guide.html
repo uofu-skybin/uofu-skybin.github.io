@@ -224,7 +224,7 @@
                             <p class="guide-content-paragraph">
                                 Here, you'll need to set your node's address, how much space you want to provide      <br>
                                 to the network, and your pricing policy. The pricing policy determines how much       <br>
-                                you charge for storage, and the algorithm used by your node to set your storage rate. <br>
+                                you charge for storage and the algorithm used by your node to set your storage rate. <br>
                                 With an "aggressive" policy, your node will try to undercut other users' prices on the<br>
                                 network; with a "passive" policy, your node will generally follow the network average <br>
                                 rate; and with a "fixed" policy, you set the prices yourself.
@@ -233,7 +233,7 @@
                             <p class="guide-content-paragraph">
                                 After this setup is complete, your provider node will run whenever you run the SkyBin   <br>
                                 application. You can monitor its status, including things like network traffic, how much<br>
-                                space is being used by other users, and your current storage rate by navigating back to <br>
+                                space is being used by other users, and your current storage rate, by navigating back to <br>
                                 the "Provide Storage" tab at any time.
                             </p>
                             <img class="guide-image" src="images/guide_imgs/post_provider_registration.png">
@@ -260,25 +260,25 @@
                         <h4 class="guide-section-title">Behind the Scenes</h4>
                         <div class="guide-section-content">
                             <p class="guide-content-paragraph">
-                                SkyBin is built around three components.
+                                Underneath the hood, SkyBin is built around three components.
                             </p>
                             <img class="guide-image" src="images/guide_imgs/skybin_architecture.png">
                             <p class="guide-content-paragraph">
-                                Renter nodes store files with other users in SkyBin. They perform operations    <br>
+                                <em><b>Renter</b></em> nodes store files with other users in SkyBin. They perform operations    <br>
                                 like encrypting and uploading files, determing where to store chunks of data,   <br>
                                 and downloading and reconstructing files from data chunks. This is the component<br>
                                 which the typical user interacts with to perform basic operations in SkyBin, and<br>
                                 it runs on the user's computer as part of the SkyBin application.
                             </p>
                             <p class="guide-content-paragraph">
-                                Provider nodes provide storage to the network, negotiating storage agreements <br>
+                                <em><b>Provider</b></em> nodes provide storage to the network, negotiating storage agreements <br>
                                 with renters, storing file blocks, and serving other users' content. Any user <br>
                                 with spare disk space can run a provider node to rent out their space for cash.
                             </p>
                             <p class="guide-content-paragraph">
-                                The SkyBin Metaserver stores file and user metadata, manages payments, and   <br>
-                                serves as a meeting place for renters and providers. This is a global service<br>
-                                operated by SkyBin.
+                              Finally, the SkyBin <em><b>Metaserver</b></em> stores file and user metadata, <br>
+                              manages payments, and  serves as a meeting place for renters and providers. <br>
+                              This is a global service  operated by SkyBin.
                             </p>
                             <p class="guide-content-paragraph">
                                 Storage in SkyBin revolves around agreements called storage contracts. When a <br>
@@ -306,7 +306,7 @@
                                 technique of storing multiple copies of files because any single parity block  <br>
                                 can be used to recover any single data block. For more information about this  <br>
                                 interesting technique, the BackBlaze blog has a useful primer:                 <br>
-                                https://www.backblaze.com/blog/reed-solomon/.
+                                <a href="https://www.backblaze.com/blog/reed-solomon/">https://www.backblaze.com/blog/reed-solomon/</a>.
                             </p>
                         </div>
                     </div>
@@ -364,6 +364,23 @@
                                 If your provider node is popular, it is possible that traffic from other users<br>
                                 swamps your computer. You can always shut off your provider node temporarily  <br>
                                 to avoid this by shutting down the SkyBin application.
+                            </p>
+                            <p class="guide-content-paragraph">
+                                <em>
+                                How do payments work?
+                                </em>
+                            </p>
+                            <p class="guide-content-paragraph">
+                              The money you place into your renter wallet is held in escrow by SkyBin and used <br>
+                              to pay for storage you reserve. You can withdraw funds you don't use by going to <br>
+                              the My Wallet pane. <br>
+                              <br>
+                              If you run a provider node, you're paid for storage users rent on your machine <br>
+                              over time in amortized payments. These payments are added to your provider <br>
+                              wallet balance and can also be withdrawn by going to the My Wallet pane. How much <br>
+                              you get paid depends on the storage rate you have set and how much space other <br>
+                              users rent on your machine. Go to the Provide Storage tab in the SkyBin portal <br>
+                              to see this information.
                             </p>
                         </div>
                     </div>
